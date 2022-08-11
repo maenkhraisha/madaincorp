@@ -20,12 +20,12 @@ const generateHtmlList = (data) => {
                     </li>`;
         })}
     </ul>`;
-  rootDiv.innerHTML = html;
+   
+  rootDiv.innerHTML = html.replaceAll(',','');
 };
 
 window.addEventListener('load', async () => {
   dataFromApi = await fetchData();
-  console.log(dataFromApi);
   generateHtmlList(dataFromApi);
 });
 
