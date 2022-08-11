@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.list-item{
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #A117F4;
+}
+
+.list-item > p:nth-child(3){
+    border: 1px solid blue;
+}
